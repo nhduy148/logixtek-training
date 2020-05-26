@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import CommentList from '../../Components/CommentList';
 import ProductDetail from '../../Components/ProductDetails';
 import Title from '../../Components/Title';
+import BackToHome from '../../Components/BackToHome';
 
-export default function Details(props) {
+export default function Details({detailsID, setDetailsID}) {
   const [item, setItem] = useState(null);
-  const ID = props.match.params.id;
+  const ID = detailsID;
 
   useEffect(() => {
     getDetails(ID);
@@ -20,6 +21,7 @@ export default function Details(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+        
     const data = { highest_price: e.target.highest_price.value }    
 
     fetch(`http://localhost:5000/item/${ID}`, {
@@ -47,6 +49,7 @@ export default function Details(props) {
 
   return (
     <main id="details">
+      <BackToHome onGoHome={setDetailsID}/>
       <section className="details">
         <Title title={`Details: Product ID ${item && item.id ? item.id : "xxx"}`} />
         <ProductDetail item={item} handleSubmit={handleSubmit} />
