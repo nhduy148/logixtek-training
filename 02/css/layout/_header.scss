@@ -1,10 +1,10 @@
 /***** Header *****/
-.header {
+.l-header {
   .logo {
     max-width: 200px;
   }
 
-  &-top {
+  &__top {
     background: #FFF;
 
     .l-flex {
@@ -38,7 +38,7 @@
     }
   }
 
-  &-bottom {
+  &__bottom {
     background: #000;
 
     .l-flex {

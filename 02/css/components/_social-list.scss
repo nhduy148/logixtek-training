@@ -1,11 +1,11 @@
-.social {
-  &-list {
+.c-social {
+  &__list {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  &-icon {
+  &__icon {
     padding: 3px;
     font-size: 20px;
     color: #CCC;

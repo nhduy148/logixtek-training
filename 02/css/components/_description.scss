@@ -11,4 +11,11 @@
   &--3 {
     color: $white;
   }
+
+  &--4 {
+    @include useRem(14);
+    text-align: left;
+    color: #b1b1b1;
+    line-height: 1.4;
+  }
 }

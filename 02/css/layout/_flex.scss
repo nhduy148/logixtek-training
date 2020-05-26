@@ -2,13 +2,13 @@
   display: flex;
 }
 
-.f-middle {
+.flex-middle {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.f-row {
+.row {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -16,85 +16,85 @@
   margin-right: -15px;
 }
 
-.f-row > * {
+.row > * {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.f-col-auto {
+.col-auto {
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   width: auto;
   max-width: 100%;
 }
 
-.f-col1 {
+.col1 {
   -ms-flex: 0 0 8.333333%;
   flex: 0 0 8.333333%;
   max-width: 8.333333%;
 }
 
-.f-col2 {
+.col2 {
   -ms-flex: 0 0 16.666667%;
   flex: 0 0 16.666667%;
   max-width: 16.666667%;
 }
 
-.f-col3 {
+.col3 {
   -ms-flex: 0 0 25%;
   flex: 0 0 25%;
   max-width: 25%;
 }
 
-.f-col4 {
+.col4 {
   -ms-flex: 0 0 33.333333%;
   flex: 0 0 33.333333%;
   max-width: 33.333333%;
 }
 
-.f-col5 {
+.col5 {
   -ms-flex: 0 0 41.666667%;
   flex: 0 0 41.666667%;
   max-width: 41.666667%;
 }
 
-.f-col6 {
+.col6 {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;
 }
 
-.f-col7 {
+.col7 {
   -ms-flex: 0 0 58.333333%;
   flex: 0 0 58.333333%;
   max-width: 58.333333%;
 }
 
-.f-col8 {
+.col8 {
   -ms-flex: 0 0 66.666667%;
   flex: 0 0 66.666667%;
   max-width: 66.666667%;
 }
 
-.f-col9 {
+.col9 {
   -ms-flex: 0 0 75%;
   flex: 0 0 75%;
   max-width: 75%;
 }
 
-.f-col10 {
+.col10 {
   -ms-flex: 0 0 83.333333%;
   flex: 0 0 83.333333%;
   max-width: 83.333333%;
 }
 
-.f-col11 {
+.col11 {
   -ms-flex: 0 0 91.666667%;
   flex: 0 0 91.666667%;
   max-width: 91.666667%;
 }
 
-.f-col12 {
+.col12 {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
