@@ -1,0 +1,74 @@
+/***** Header *****/
+.header {
+  .logo {
+    max-width: 200px;
+  }
+
+  &-top {
+    background: #FFF;
+
+    .l-flex {
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .contact {
+
+    &-list {
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    &-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 5px;
+      color: #666;
+    }
+
+    &-icon {
+      font-size: 18px;
+      margin-right: 5px;
+    }
+
+    &-text {
+      font-size: 14px;
+    }
+  }
+
+  &-bottom {
+    background: #000;
+
+    .l-flex {
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid $gray;
+
+      &-input {
+        border: none;
+        outline: none;
+        color: $gray;
+        background-color: transparent;
+        font-size: 12px;
+        padding: 3px 5px;
+      }
+
+      &-button {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        padding: 10px;
+        color: $gray;
+      }
+    }
+  }
+}
+/***** End Header *****/

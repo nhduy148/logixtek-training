@@ -1,0 +1,190 @@
+.about {
+  padding: 40px 0;
+
+  &-visual {
+    position: relative;
+    max-width: 300px;
+    margin: 30px auto 40px;
+
+    &__list {
+      width: calc(300px - (28px * 2));
+      margin: 0 auto;
+    }
+
+    &__image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__name {
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 10px;
+      text-transform: uppercase;
+    }
+
+    .prev-btn {
+      left: 0;
+    }
+
+    .next-btn {
+      right: 0;
+    }
+
+    .c-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 20px 5px;
+    }
+  }
+
+  &-match {
+    padding: 40px 30px;
+    background: $yellow;
+
+    &__head {
+      margin-bottom: 30px;
+    }
+
+    &__content {
+      display: flex;
+
+      .next,
+      .upcoming {
+        width: 50%;
+      }
+
+      .next {
+        background: $white;
+      }
+
+      .upcoming {
+        background: $black;
+      }
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 20px;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 70%;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        background: $yellow;
+      }
+    }
+
+    .time-out {
+      padding: 20px;
+      background: #CCC;
+      font-size: 22px;
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .match-schedule {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 20px;
+      margin-bottom: 30px;
+
+      &__item {
+        margin: 0 15px 15px;
+      }
+
+      &__vs {
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 10px;
+        color: $black;
+        background: $yellow;
+      }
+
+      &__logo {
+        text-align: center;
+      }
+
+      &__name {
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $black;
+      }
+    }
+
+    .time-expected {
+      color: $gray;
+      text-align: center;
+      line-height: 1.4;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .upcoming {
+      table {
+        width: 100%;
+      }
+
+      tr {
+        &:first-child {
+          th {
+            &:first-child {
+              text-align: left;
+            }
+
+            &:last-child {
+              width: 30%;
+              text-align: center;
+            }
+          }
+        }
+
+        &:nth-child(even) {
+          background: #494949;
+        }
+      }
+
+      th,
+      td {
+        font-size: 14px;
+        padding: 15px;
+        color: $gray
+      }
+
+      th {
+        color: $yellow;
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+
+      .match {
+        width: 60%;
+        text-transform: uppercase;
+
+        .yellow {
+          margin: 0 10px;
+        }
+      }
+
+      .time {
+        width: 40%;
+        text-align: right;
+      }
+    }
+  }
+}

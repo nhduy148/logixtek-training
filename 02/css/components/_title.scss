@@ -1,0 +1,31 @@
+.c-title {
+  position: relative;
+  font-size: 24px;
+  color: $black;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 4px;
+    background: $yellow;
+  }
+
+  &--2 {
+    &::before {
+      background: $black;
+    }
+  }
+
+  &--3 {
+    color: $white;
+  }
+}

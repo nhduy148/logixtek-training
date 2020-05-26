@@ -1,0 +1,30 @@
+.contact {
+  padding: 40px 0;
+
+  &-content {
+    margin-top: 30px;
+  }
+
+  &-map {
+    text-align: center;
+  }
+
+  &-form {
+    input {
+      width: 100%;
+      margin: 0 auto 20px;
+      display: block;
+      border: 1px solid #CCC;
+      padding: 12px 10px;
+
+      &[name=message] {
+        min-height: 100px;
+      }
+    }
+
+    .l-button {
+      margin: 0 auto;
+      text-align: right;
+    }
+  }
+}

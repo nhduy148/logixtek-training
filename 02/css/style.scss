@@ -1,0 +1,35 @@
+// Base stuff
+@import "base/reset";
+@import "base/unit";
+// Components
+@import "components/title";
+@import "components/description";
+@import "components/arrow";
+@import "components/button";
+@import "components/navigation";
+@import "components/social-list";
+// SCSS utilities
+@import "helpers/functions";
+@import "helpers/mixins";
+@import "helpers/media";
+@import "helpers/variables";
+// Settings layout
+@import "layout/flex";
+@import "layout/general";
+@import "layout/header";
+@import "layout/footer";
+// SCSS pages
+@import "pages/index";
+/***********************************************************
+
+	End Template
+
+***********************************************************/
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

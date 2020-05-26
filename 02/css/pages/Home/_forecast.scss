@@ -1,0 +1,22 @@
+.forecast {
+  padding: 40px;
+  background-image: url(../images/Slide03.jpg);
+  background-size: cover;
+  min-height: 300px;
+
+  &-content {
+    margin-top: 30px;
+
+    &__score {
+      font-size: 48px;
+      font-weight: bold;
+      margin: 0 20px;
+      color: $white
+    }
+  }
+
+  .l-button {
+    margin-top: 80px;
+    text-align: center;
+  }
+}

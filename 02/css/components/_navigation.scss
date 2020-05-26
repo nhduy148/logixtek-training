@@ -1,0 +1,22 @@
+.main-nav {
+  padding: 10px 0;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    color: $gray;
+    transition: .3s;
+
+    &:hover {
+      color: #ffc722
+    }
+  }
+}
