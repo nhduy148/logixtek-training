@@ -1,10 +1,10 @@
 .c-desc {
-  font-size: 16px;
+  @include useRem(16);
   text-align: center;
   line-height: 1.4;
 
   &--2 {
-    font-size: 18px;
+    @include useRem(18);
     text-transform: uppercase;
   }
 

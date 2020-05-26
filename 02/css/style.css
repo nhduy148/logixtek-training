@@ -373,7 +373,7 @@ textarea {
 
 .c-title {
   position: relative;
-  font-size: 24px;
+  font-size: 1.84615385rem;
   color: #212121;
   font-weight: bold;
   text-transform: uppercase;
@@ -403,13 +403,13 @@ textarea {
 }
 
 .c-desc {
-  font-size: 16px;
+  font-size: 1.23076923rem;
   text-align: center;
   line-height: 1.4;
 }
 
 .c-desc--2 {
-  font-size: 18px;
+  font-size: 1.38461538rem;
   text-transform: uppercase;
 }
 
@@ -457,7 +457,7 @@ textarea {
 }
 
 .main-nav__item {
-  font-size: 14px;
+  font-size: 1.07692308rem;
   font-weight: bold;
   text-transform: uppercase;
   padding: 15px 20px;
@@ -955,7 +955,7 @@ a {
 }
 
 .about-match .title {
-  font-size: 18px;
+  font-size: 1.38461538rem;
   font-weight: bold;
   text-transform: uppercase;
   padding: 20px;
@@ -977,7 +977,7 @@ a {
 .about-match .time-out {
   padding: 20px;
   background: #CCC;
-  font-size: 22px;
+  font-size: 1.69230769rem;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
@@ -1002,7 +1002,7 @@ a {
 }
 
 .about-match .match-schedule__vs {
-  font-size: 16px;
+  font-size: 1.23076923;
   font-weight: bold;
   text-transform: uppercase;
   padding: 10px;
@@ -1015,7 +1015,7 @@ a {
 }
 
 .about-match .match-schedule__name {
-  font-size: 18px;
+  font-size: 1.38461538rem;
   font-weight: bold;
   text-transform: uppercase;
   color: black;
@@ -1117,7 +1117,7 @@ a {
 }
 
 .main-visual__item-content h3 {
-  font-size: 36px;
+  font-size: 2.76923rem;
   text-align: center;
   font-weight: 600;
   padding: 10px 15px;
@@ -1127,7 +1127,7 @@ a {
 }
 
 .main-visual__item-content p {
-  font-size: 16px;
+  font-size: 1.23077rem;
   text-align: center;
 }
 

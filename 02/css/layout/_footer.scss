@@ -10,7 +10,7 @@
   }
 
   &-title {
-    font-size: 18px;
+    @include useRem(18);
     font-weight: bold;
     text-transform: uppercase;
     padding-bottom: 12px;
@@ -30,7 +30,6 @@
 
   &-desc {
     line-height: 1.4;
-    font-size: 14px;
   }
 
   &-gallery {
@@ -78,7 +77,6 @@
       border: 1px solid;
       color: $gray;
       padding: 8px 5px;
-      font-size: 12px;
       background-color: transparent;
     }
 
@@ -94,7 +92,6 @@
   }
 
   .copyright {
-    font-size: 13px;
     color: $gray;
     text-align: right;
     margin: 30px 0 0;

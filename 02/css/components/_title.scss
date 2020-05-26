@@ -1,6 +1,6 @@
 .c-title {
   position: relative;
-  font-size: 24px;
+  @include useRem(24);
   color: $black;
   font-weight: bold;
   text-transform: uppercase;
