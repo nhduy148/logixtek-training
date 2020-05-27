@@ -2,6 +2,11 @@ $yellow: #ffc722;
 $gray: #b1b1b1;
 $black: #212121;
 $white: #FFF;
+$col: 12;
+$breakpoints: (
+  sp: 768px,
+  tb: 1024px,
+);
 
 .yellow {
   color: $yellow;

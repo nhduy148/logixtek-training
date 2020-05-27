@@ -1,29 +1,15 @@
 /***** Header *****/
-.l-header {
+.header {
   .logo {
     max-width: 200px;
   }
 
   &__top {
     background: #FFF;
-
-    .l-flex {
-      justify-content: space-between;
-      align-items: center;
-    }
   }
 
   .contact {
-
-    &-list {
-      margin-left: auto;
-      margin-right: 0;
-    }
-
     &-item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       margin: 0 5px;
       color: #666;
     }
@@ -41,18 +27,10 @@
   &__bottom {
     background: #000;
 
-    .l-flex {
-      justify-content: space-between;
-      align-items: center;
-    }
-
     .search {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       border-bottom: 1px solid $gray;
 
-      &-input {
+      input {
         border: none;
         outline: none;
         color: $gray;
@@ -61,7 +39,7 @@
         padding: 3px 5px;
       }
 
-      &-button {
+      button {
         border: none;
         outline: none;
         background-color: transparent;

@@ -1,15 +1,15 @@
 .contact {
   padding: 40px 0;
 
-  &-content {
+  &__content {
     margin-top: 30px;
   }
 
-  &-map {
+  &__map {
     text-align: center;
   }
 
-  &-form {
+  &__form {
     input {
       width: 100%;
       margin: 0 auto 20px;
@@ -22,7 +22,7 @@
       }
     }
 
-    .l-button {
+    .button-wrap {
       margin: 0 auto;
       text-align: right;
     }

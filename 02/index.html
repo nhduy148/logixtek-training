@@ -4,56 +4,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Logixtek">
   <title>Document</title>
   <link rel="stylesheet" href="./iconfont/MaterialDesign-Webfont-master/css/materialdesignicons.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/main.css">
 
 </head>
 
 <body>
   <div class="app">
-    <header class="l-header">
-      <div class="l-header__top">
+    <header class="header">
+      <div class="header__top">
         <div class="container">
-          <div class="l-flex">
-            <div class="logo">
-              <h1>
-                <a href="#">
-                  <img src="./images/default-logo.png" alt="">
-                </a>
-              </h1>
+          <div class="flex-row flex-between-center">
+            <div class="col3">
+              <div class="logo">
+                <h1>
+                  <a href="#">
+                    <img src="./images/default-logo.png" alt="">
+                  </a>
+                </h1>
+              </div>
             </div>
-            <ul class="contact-list flex-middle">
-              <li class="contact-item">
-                <a href="#">
-                  <span class="contact-icon"><i class="mdi mdi-phone"></i></span>
-                  <span class="contact-text">+880 1710-000-000</span>
-                </a>
-              </li>
-              <li class="contact-item">
-                <a href="#">
-                  <span class="contact-icon"><i class="mdi mdi-email"></i></span>
-                  <span class="contact-text">Email@Domain.com</span>
-                </a>
-              </li>
-            </ul>
-            <div class="c-social">
-              <ul class="c-social__list">
-                <li class="c-social__item"><a href="#" class="c-social__icon"><i class="mdi mdi-facebook"></i></a></li>
-                <li class="c-social__item"><a href="#" class="c-social__icon"><i class="mdi mdi-twitter"></i></a></li>
-                <li class="c-social__item"><a href="#" class="c-social__icon"><i class="mdi mdi-linkedin"></i></a></li>
-                <li class="c-social__item"><a href="#" class="c-social__icon"><i class="mdi mdi-pinterest"></i></a></li>
+            <div class="flex align-items-center justify-content-end col9">
+              <ul class="contact-list flex-center-center">
+                <li class="contact-item flex-center-center">
+                  <a href="#">
+                    <span class="contact-icon"><i class="mdi mdi-phone"></i></span>
+                    <span class="contact-text">+880 1710-000-000</span>
+                  </a>
+                </li>
+                <li class="contact-item flex-center-center">
+                  <a href="#">
+                    <span class="contact-icon"><i class="mdi mdi-email"></i></span>
+                    <span class="contact-text">Email@Domain.com</span>
+                  </a>
+                </li>
               </ul>
+              <div class="social">
+                <ul class="social__list flex-center-center">
+                  <li class="social__item"><a href="#" class="social__icon"><i class="mdi mdi-facebook"></i></a></li>
+                  <li class="social__item"><a href="#" class="social__icon"><i class="mdi mdi-twitter"></i></a></li>
+                  <li class="social__item"><a href="#" class="social__icon"><i class="mdi mdi-linkedin"></i></a></li>
+                  <li class="social__item"><a href="#" class="social__icon"><i class="mdi mdi-pinterest"></i></a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="l-header__bottom">
+      <div class="header__bottom">
         <div class="container">
-          <div class="l-flex">
+          <div class="flex flex-between-center">
             <nav class="main-nav">
-              <ul class="main-nav__list">
+              <ul class="main-nav__list flex-center-center">
                 <li class="main-nav__item">
                   <a href="#">Home</a>
                 </li>
@@ -74,18 +79,18 @@
                 </li>
               </ul>
             </nav>
-            <form action="#" class="search">
-              <input type="text" class="search-input" placeholder="Enter your search...">
-              <button class="search-button" type="submit"><i class="mdi mdi-magnify"></i></button>
+            <form action="#" class="search flex-center-center">
+              <input type="text" placeholder="Enter your search...">
+              <button type="submit"><i class="mdi mdi-magnify"></i></button>
             </form>
           </div>
         </div>
       </div>
     </header>
-    <main class="l-main" role="main">
+    <main class="main" role="main">
       <section class="main-visual">
-        <span class="c-arrow prev-btn"><i class="mdi mdi-chevron-left"></i></span>
-        <span class="c-arrow next-btn"><i class="mdi mdi-chevron-right"></i></span>
+        <span class="arrow-button prev-btn"><i class="mdi mdi-chevron-left"></i></span>
+        <span class="arrow-button next-btn"><i class="mdi mdi-chevron-right"></i></span>
         <div class="main-visual__list" id="visual">
           <div class="main-visual__item">
             <div class="main-visual__item-image">
@@ -95,8 +100,8 @@
               <div class="container">
                 <h3>Life is <span class="yellow">about timing</span></h3>
                 <p>Just play. <span class="yellow">Have fun.</span> Enjoy the game</p>
-                <div class="l-button">
-                  <a href="#" class="c-button">read more</a>
+                <div class="button-wrap">
+                  <a href="#" class="button">read more</a>
                 </div>
               </div>
             </div>
@@ -109,8 +114,8 @@
               <div class="container">
                 <h3>Life is <span class="yellow">about timing</span></h3>
                 <p>Just play. <span class="yellow">Have fun.</span> Enjoy the game</p>
-                <div class="l-button">
-                  <a href="#" class="c-button">read more</a>
+                <div class="button-wrap">
+                  <a href="#" class="button">read more</a>
                 </div>
               </div>
             </div>
@@ -123,8 +128,8 @@
               <div class="container">
                 <h3>Life is <span class="yellow">about timing</span></h3>
                 <p>Just play. <span class="yellow">Have fun.</span> Enjoy the game</p>
-                <div class="l-button">
-                  <a href="#" class="c-button">read more</a>
+                <div class="button-wrap">
+                  <a href="#" class="button">read more</a>
                 </div>
               </div>
             </div>
@@ -133,45 +138,45 @@
       </section>
 
       <section class="about">
-        <div class="about-head">
-          <h3 class="c-title">about team</h3>
-          <p class="c-desc">
+        <div class="about__head">
+          <h3 class="title">about team</h3>
+          <p class="description">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>
             when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
           </p>
         </div>
-        <div class="about-visual">
-          <span class="c-arrow prev-btn"><i class="mdi mdi-chevron-left"></i></span>
-          <span class="c-arrow next-btn"><i class="mdi mdi-chevron-right"></i></span>
-          <div class="about-visual__list" id="about-visual">
-            <div class="about-visual__item">
-              <div class="about-visual__image">
+        <div class="about__visual">
+          <span class="arrow-button prev-btn"><i class="mdi mdi-chevron-left"></i></span>
+          <span class="arrow-button next-btn"><i class="mdi mdi-chevron-right"></i></span>
+          <div class="visual__list" id="about-visual">
+            <div class="visual__item">
+              <figure class="visual__image">
                 <img src="./images/photo_about_1.png" alt="">
-              </div>
-              <div class="about-visual__name">Matin Huanez</div>
+                <figcaption class="visual__name">Matin Huanez</figcaption>
+              </figure>
             </div>
-            <div class="about-visual__item">
-              <div class="about-visual__image">
+            <div class="visual__item">
+              <figure class="visual__image">
                 <img src="./images/photo_about_1.png" alt="">
-              </div>
-              <div class="about-visual__name">Matin Huanez</div>
+                <figcaption class="visual__name">Matin Huanez</figcaption>
+              </figure>
             </div>
           </div>
         </div>
-        <div class="about-match">
+        <div class="about__match">
           <div class="container">
-            <div class="about-match__head">
-              <h4 class="c-title c-title--2">next match stats in table</h4>
-              <p class="c-desc c-desc--2">its next match stats in table view</p>
+            <div class="match__head">
+              <h4 class="title title--2">next match stats in table</h4>
+              <p class="description description--2">its next match stats in table view</p>
             </div>
-            <div class="about-match__content">
-              <div class="next">
-                <h4 class="title">next <span class="yellow">match</span></h4>
+            <div class="match__content flex">
+              <div class="next-match">
+                <h4 class="next-match__title">next <span class="yellow">match</span></h4>
                 <p class="time-out">45 <span class="time-out--unit">days</span> : 11 <span
                     class="time-out--unit">hrs</span> : 44 <span class="time-out--unit">min</span> : 01 <span
                     class="time-out--unit">sec</span></p>
-                <div class="match-schedule">
+                <div class="match-schedule flex-bottom-center">
                   <div class="match-schedule__item">
                     <div class="match-schedule__logo">
                       <img src="./images/england.png" alt="">
@@ -233,54 +238,54 @@
 
       <section class="news">
         <div class="container">
-          <div class="news-head">
-            <h3 class="c-title">news</h3>
-            <p class="c-desc">
+          <div class="news__head">
+            <h3 class="title">news</h3>
+            <p class="description">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
             </p>
           </div>
-          <div class="row news-list">
-            <div class="col4 c-news-item">
-              <div class="c-news-item__image">
+          <div class="flex-row news__list">
+            <div class="col4 news-item">
+              <figure class="news-item__image">
                 <img src="./images/photo1.png" alt="">
-              </div>
-              <h5 class="c-news-item__title">Sed ut perspiciatis unde omnisiste natus error hendrerit</h5>
-              <p class="c-news-item__excerpt">
+              </figure>
+              <h5 class="news-item__title">Sed ut perspiciatis unde omnisiste natus error hendrerit</h5>
+              <p class="news-item__excerpt">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quibusdam dolor obcaecati quia
                 deleniti adipisci eveniet saepe blanditiis nihil. Sapiente perspiciatis saepe quam doloribus a dolore
                 nesciunt magnam? Fuga, tempore!
               </p>
-              <div class="l-button">
-                <a href="#" class="c-button">read more</a>
+              <div class="button-wrap">
+                <a href="#" class="button">read more</a>
               </div>
             </div>
-            <div class="col4 c-news-item">
-              <div class="c-news-item__image">
+            <div class="col4 news-item">
+              <figure class="news-item__image">
                 <img src="./images/photo2.png" alt="">
-              </div>
-              <h5 class="c-news-item__title">Sed ut perspiciatis unde omnisiste natus error hendrerit</h5>
-              <p class="c-news-item__excerpt">
+              </figure>
+              <h5 class="news-item__title">Sed ut perspiciatis unde omnisiste natus error hendrerit</h5>
+              <p class="news-item__excerpt">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quibusdam dolor obcaecati quia
                 deleniti adipisci eveniet saepe blanditiis nihil. Sapiente perspiciatis saepe quam doloribus a dolore
                 nesciunt magnam? Fuga, tempore!
               </p>
-              <div class="l-button">
-                <a href="#" class="c-button">read more</a>
+              <div class="button-wrap">
+                <a href="#" class="button">read more</a>
               </div>
             </div>
-            <div class="col4 c-news-item">
-              <div class="c-news-item__image">
+            <div class="col4 news-item">
+              <figure class="news-item__image">
                 <img src="./images/photo3.png" alt="">
-              </div>
-              <h5 class="c-news-item__title">Sed ut perspiciatis unde omnisiste natus error hendrerit</h5>
-              <p class="c-news-item__excerpt">
+              </figure>
+              <h5 class="news-item__title">Sed ut perspiciatis unde omnisiste natus error hendrerit</h5>
+              <p class="news-item__excerpt">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quibusdam dolor obcaecati quia
                 deleniti adipisci eveniet saepe blanditiis nihil. Sapiente perspiciatis saepe quam doloribus a dolore
                 nesciunt magnam? Fuga, tempore!
               </p>
-              <div class="l-button">
-                <a href="#" class="c-button">read more</a>
+              <div class="button-wrap">
+                <a href="#" class="button">read more</a>
               </div>
             </div>
           </div>
@@ -289,32 +294,32 @@
 
       <section class="forecast">
         <div class="container">
-          <div class="forecast-head">
-            <h3 class="c-title c-title--3">forecast</h3>
-            <p class="c-desc c-desc--3">
+          <div class="forecast__head">
+            <h3 class="title title--3">forecast</h3>
+            <p class="description description--3">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
             </p>
           </div>
-          <div class="forecast-content flex-middle">
-            <div class="forecast-content__logo">
+          <div class="forecast__content flex-center-center">
+            <figure class="forecast__content-logo">
               <img src="./images/flag1.png" alt="">
-            </div>
-            <div class="forecast-content__score">1 - 3</div>
-            <div class="forecast-content__logo">
+            </figure>
+            <div class="forecast__content-score">1 - 3</div>
+            <figure class="forecast__content-logo">
               <img src="./images/flag2.png" alt="">
-            </div>
+            </figure>
           </div>
-          <div class="l-button">
-            <a href="#" class="c-button">score board</a>
+          <div class="button-wrap">
+            <a href="#" class="button">score board</a>
           </div>
         </div>
       </section>
 
       <section class="contact">
-        <div class="contact-head">
-          <h3 class="c-title">contactus</h3>
-          <p class="c-desc">
+        <div class="contact__head">
+          <h3 class="title">contactus</h3>
+          <p class="description">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <br>
             Lorem Ipsum has been the industry's standard dummy text ever since the. <br>
@@ -322,87 +327,87 @@
           </p>
         </div>
         <div class="container">
-          <div class="contact-content row">
-            <div class="contact-map col6">
+          <div class="contact__content flex-row">
+            <div class="contact__map col6">
               <img src="./images/map.png" alt="">
             </div>
-            <form action="#" class="contact-form col6">
+            <form action="#" class="contact__form col6">
               <input type="text" name="name" id="name" placeholder="Full Name">
               <input type="email" name="mail" id="mail" placeholder="Email">
               <input type="text" name="message" id="message" placeholder="Message">
-              <div class="l-button">
-                <button class="c-button">send</button>
+              <div class="button-wrap">
+                <button class="button">send</button>
               </div>
             </form>
           </div>
         </div>
       </section>
     </main>
-    <footer class="l-footer footer">
+    <footer class="footer footer">
       <div class="container">
-        <div class="l-footer__top row">
+        <div class="footer__top flex-row">
           <div class="col4">
-            <h3 class="c-title c-title--4">About Us</h3>
-            <p class="c-desc c-desc--4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sunt odio placeat
+            <h3 class="title title--4">About Us</h3>
+            <p class="description description--4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sunt odio placeat
               temporibus voluptatum esse iste doloribus corporis voluptas, omnis itaque. Voluptatum facilis asperiores
               commodi id quisquam eum ad necessitatibus?</p>
-              <div class="c-social">
-                <ul class="c-social__list">
-                  <li class="c-social__item"><a href="#" class="c-social__icon"><i class="mdi mdi-facebook"></i></a></li>
-                  <li class="c-social__item"><a href="#" class="c-social__icon"><i class="mdi mdi-twitter"></i></a></li>
-                  <li class="c-social__item"><a href="#" class="c-social__icon"><i class="mdi mdi-linkedin"></i></a></li>
-                  <li class="c-social__item"><a href="#" class="c-social__icon"><i class="mdi mdi-pinterest"></i></a></li>
-                </ul>
-              </div>
-          </div>
-          <div class="col4">
-            <h3 class="c-title c-title--4">Galley</h3>
-            <p class="c-desc c-desc--4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sunt odio placeat
-              temporibus</p>
-            <div class="gallery">
-              <div class="gallery__item">
-                <img src="./images/1.png" alt="">
-                <img src="./images/1_hover.png" alt="">
-              </div>
-              <div class="gallery__item">
-                <img src="./images/2.png" alt="">
-                <img src="./images/2_hover.png" alt="">
-              </div>
-              <div class="gallery__item">
-                <img src="./images/3.png" alt="">
-                <img src="./images/3_hover.png" alt="">
-              </div>
-              <div class="gallery__item">
-                <img src="./images/4.png" alt="">
-                <img src="./images/4_hover.png" alt="">
-              </div>
-              <div class="gallery__item">
-                <img src="./images/6.png" alt="">
-                <img src="./images/6_hover.png" alt="">
-              </div>
-              <div class="gallery__item">
-                <img src="./images/7.png" alt="">
-                <img src="./images/7_hover.png" alt="">
-              </div>
-              <div class="gallery__item">
-                <img src="./images/8.png" alt="">
-                <img src="./images/8_hover.png" alt="">
-              </div>
-              <div class="gallery__item">
-                <img src="./images/9.png" alt="">
-                <img src="./images/9_hover.png" alt="">
-              </div>
+            <div class="social">
+              <ul class="social__list flex-center-center">
+                <li class="social__item"><a href="#" class="social__icon"><i class="mdi mdi-facebook"></i></a></li>
+                <li class="social__item"><a href="#" class="social__icon"><i class="mdi mdi-twitter"></i></a></li>
+                <li class="social__item"><a href="#" class="social__icon"><i class="mdi mdi-linkedin"></i></a></li>
+                <li class="social__item"><a href="#" class="social__icon"><i class="mdi mdi-pinterest"></i></a></li>
+              </ul>
             </div>
           </div>
           <div class="col4">
-            <h3 class="c-title c-title--4">Newsletter</h3>
-            <p class="c-desc c-desc--4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sunt odio placeat
+            <h3 class="title title--4">Galley</h3>
+            <p class="description description--4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sunt odio placeat
+              temporibus</p>
+            <div class="gallery">
+              <figure class="gallery__item">
+                <img src="./images/1.png" alt="">
+                <img src="./images/1_hover.png" alt="">
+              </figure>
+              <figure class="gallery__item">
+                <img src="./images/2.png" alt="">
+                <img src="./images/2_hover.png" alt="">
+              </figure>
+              <figure class="gallery__item">
+                <img src="./images/3.png" alt="">
+                <img src="./images/3_hover.png" alt="">
+              </figure>
+              <figure class="gallery__item">
+                <img src="./images/4.png" alt="">
+                <img src="./images/4_hover.png" alt="">
+              </figure>
+              <figure class="gallery__item">
+                <img src="./images/6.png" alt="">
+                <img src="./images/6_hover.png" alt="">
+              </figure>
+              <figure class="gallery__item">
+                <img src="./images/7.png" alt="">
+                <img src="./images/7_hover.png" alt="">
+              </figure>
+              <figure class="gallery__item">
+                <img src="./images/8.png" alt="">
+                <img src="./images/8_hover.png" alt="">
+              </figure>
+              <figure class="gallery__item">
+                <img src="./images/9.png" alt="">
+                <img src="./images/9_hover.png" alt="">
+              </figure>
+            </div>
+          </div>
+          <div class="col4">
+            <h3 class="title title--4">Newsletter</h3>
+            <p class="description description--4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sunt odio placeat
               temporibus voluptatum esse iste doloribus corporis voluptas, omnis itaque. Voluptatum facilis asperiores
               commodi id quisquam eum ad necessitatibus?</p>
-            <form action="#" class="form">
+            <form action="#" class="footer__form">
               <input type="email" name="email" id="femail" placeholder="Enter your email">
-              <div class="l-button">
-                <button type="submit" class="c-button">subcrise</button>
+              <div class="button-wrap">
+                <button type="submit" class="button">subcrise</button>
               </div>
             </form>
           </div>

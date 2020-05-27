@@ -1,0 +1,20 @@
+@mixin useRem($fz) {
+	font-size: #{$fz/13}rem;
+}
+
+@mixin useColumn($value) {
+	$unit: unquote("%");
+  flex: 0 0 #{$value}$unit;
+  max-width: #{$value}$unit;
+}
+
+@mixin useBreakpoint($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint ) {
+		@media screen and (max-width: map-get($breakpoints, $breakpoint) ) {
+			@content;
+		}
+	}
+	@else {
+		
+	}
+}

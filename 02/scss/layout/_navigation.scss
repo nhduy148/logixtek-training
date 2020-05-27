@@ -1,12 +1,6 @@
 .main-nav {
   padding: 10px 0;
 
-  &__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   &__item {
     @include useRem(14);
     font-weight: bold;

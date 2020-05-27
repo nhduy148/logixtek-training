@@ -1,5 +1,5 @@
 /***** Footer *****/
-.l-footer {
+.footer {
   background: $black;
   padding: 40px 0;
 
@@ -46,7 +46,7 @@
     }
   }
 
-  .form {
+  &__form {
     margin-top: 20px;
 
     input {
@@ -57,13 +57,13 @@
       background-color: transparent;
     }
 
-    .l-button {
+    .button-wrap {
       margin-top: 10px;
       text-align: right;
     }
   }
 
-  .c-social__list {
+  .social__list {
     margin-top: 20px;
     justify-content: flex-start;
   }

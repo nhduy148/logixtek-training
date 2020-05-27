@@ -4,10 +4,10 @@
   background-size: cover;
   min-height: 300px;
 
-  &-content {
+  &__content {
     margin-top: 30px;
 
-    &__score {
+    &-score {
       @include useRem(48);
       font-weight: bold;
       margin: 0 20px;
@@ -15,7 +15,7 @@
     }
   }
 
-  .l-button {
+  .button-wrap {
     margin-top: 80px;
     text-align: center;
   }

@@ -1,28 +1,30 @@
 .about {
   padding: 40px 0;
 
-  &-visual {
+  &__visual {
     position: relative;
     max-width: 300px;
     margin: 30px auto 40px;
 
-    &__list {
-      width: calc(300px - (28px * 2));
-      margin: 0 auto;
-    }
-
-    &__image {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    &__name {
-      @include useRem(16);
-      font-weight: bold;
-      text-align: center;
-      margin-top: 10px;
-      text-transform: uppercase;
+    .visual {
+      &__list {
+        width: calc(300px - (28px * 2));
+        margin: 0 auto;
+      }
+  
+      &__image {
+        img {
+          margin: 0 auto;
+        }
+      }
+  
+      &__name {
+        @include useRem(16);
+        font-weight: bold;
+        text-align: center;
+        margin-top: 10px;
+        text-transform: uppercase;
+      }
     }
 
     .prev-btn {
@@ -33,7 +35,7 @@
       right: 0;
     }
 
-    .c-arrow {
+    .arrow-button {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -41,47 +43,47 @@
     }
   }
 
-  &-match {
+  &__match {
     padding: 40px 30px;
     background: $yellow;
-
-    &__head {
-      margin-bottom: 30px;
-    }
-
-    &__content {
-      display: flex;
-
-      .next,
-      .upcoming {
-        width: 50%;
+    .match {
+      &__head {
+        margin-bottom: 30px;
       }
-
-      .next {
-        background: $white;
-      }
-
-      .upcoming {
-        background: $black;
-      }
-    }
-
-    .title {
-      @include useRem(18);
-      font-weight: bold;
-      text-transform: uppercase;
-      padding: 20px;
-      position: relative;
-
-      &::after {
-        content: "";
-        width: 70%;
-        height: 1px;
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-        background: $yellow;
+  
+      &__content {
+  
+        .next-match,
+        .upcoming {
+          width: 50%;
+        }
+  
+        .next-match {
+          background: $white;
+  
+          &__title {
+            @include useRem(18);
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 20px;
+            position: relative;
+  
+            &::after {
+              content: "";
+              width: 70%;
+              height: 1px;
+              position: absolute;
+              top: 50%;
+              right: 20px;
+              transform: translateY(-50%);
+              background: $yellow;
+            }
+          }
+        }
+  
+        .upcoming {
+          background: $black;
+        }
       }
     }
 
@@ -99,9 +101,6 @@
     }
 
     .match-schedule {
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
       margin-top: 20px;
       margin-bottom: 30px;
 
