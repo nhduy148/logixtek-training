@@ -1,0 +1,102 @@
+.layout{
+  &__tabs {
+    margin-bottom: 80px;
+    .flex-row {
+      @include useBreakpoint("sp") {
+        flex-direction: column;
+      }
+    }
+    &-container {
+      max-width: 1600px;
+    }
+    &__list {
+      border: 1px solid #3399cc;
+    }
+    &-item {
+      text-align: center;
+      padding: 15px 0;
+      cursor: pointer;
+      border: 1px solid #3399cc;
+      color: #3399cc;
+      font-weight: bold;
+      font-size: 20px;
+
+      &.active {
+        background-color: #3399cc;
+        color: #FFF;
+      }
+    }
+  }
+
+  &__item {
+    display: none;
+    &.active {
+      display: block;
+    }
+    &--responsive {
+      .item{
+        @include useBreakpointInRange(768px, 1024px) {
+          display: flex;
+          align-items: center;
+          &__image {
+            min-width: 100px;
+            margin: 0;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.frame {
+  &__head {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  &__nav {
+    width: calc( 100% - 50px );
+    height: 50px;
+    background-color: #3399cc;
+  }
+  &__toggle {
+    width: 50px;
+    height: 50px;
+    background-color: #cc3333;
+  }
+  &__title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+  }
+  &__banner {
+    height: 200px;
+    background-color: #999;
+  }
+  &__foot {
+    margin-top: 20px;
+    background-color: #3399cc;
+    height: 50px;
+  }
+}
+
+.item {
+  margin: 20px 0;
+  &__image {
+    max-width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    &--green {
+      background-color: green;
+    }
+    &--blue {
+      background-color: blue;
+    }
+    &--purple {
+      background-color: purple;
+    }
+  }
+}

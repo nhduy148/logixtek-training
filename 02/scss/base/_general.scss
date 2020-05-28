@@ -36,4 +36,118 @@ a {
     padding-left: 10px;
     padding-right: 10px;
   }
+
+
+  &-fixed {
+    width: 1600px;
+    margin: 0 auto;
+  }
+  &-fluid {
+    width: 83.33%;
+    margin: 0 auto;
+  }
+  &-adaptive {
+    max-width: 1600px;
+    @extend .container;
+
+    &--for-pc {
+      @include useBreakpointWithLimit(max, pc) {
+        display: none;
+      }
+      .item {
+        &__image {
+          max-width: 100px;
+          height: 100px;
+          margin: 0 auto;
+          border-radius: 50%;
+          margin-bottom: 20px;
+          &--green {
+            background-color: green;
+          }
+          &--blue {
+            background-color: blue;
+          }
+          &--purple {
+            background-color: purple;
+          }
+        }
+      }
+    }
+
+    &--for-tb {
+      @include useBreakpointWithLimit(min, pc) {
+        display: none;
+      }
+      @include useBreakpoint("sp") {
+        display: none;
+      }
+      @include useBreakpointInRange(768px, 1024px) {
+        .item {
+          &__list {
+            transform: translateY(-75px);
+          }
+          &__image {
+            max-width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            &--green {
+              background-color: green;
+            }
+            &--blue {
+              background-color: blue;
+            }
+            &--purple {
+              background-color: purple;
+            }
+          }
+        }
+      }
+    }
+
+    &--for-sp {
+      @include useBreakpointWithLimit(min, sp) {
+        display: none;
+      }
+      @include useBreakpoint("sp") {
+        .item {
+          display: flex;
+          align-items: center;
+          &__image {
+            min-width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            border-radius: 50%;
+            &--green {
+              background-color: green;
+            }
+            &--blue {
+              background-color: blue;
+            }
+            &--purple {
+              background-color: purple;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-responsive {
+    width: 100%;
+    max-width: 1600px;
+    @extend .container;
+
+    @include useBreakpoint("sp") {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    > * {
+      @include useBreakpoint("sp") {
+        margin-left: -10px;
+        margin-right: -10px;
+      }
+    }
+  }
 }

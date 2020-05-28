@@ -18,3 +18,15 @@
 		
 	}
 }
+
+@mixin useBreakpointWithLimit( $limit, $breakpoint ) {
+	@media screen and( #{$limit}-width: map-get($breakpoints, $breakpoint) ) {
+		@content;
+	}
+}
+
+@mixin useBreakpointInRange($min, $max) {
+	@media ( min-width: $min ) and (max-width: $max ) {
+		@content;
+	}
+}

@@ -148,4 +148,16 @@
     $value: getColumn($col, $i);
     @include useColumn($value)
   }
+  @include useBreakpoint("tb") {
+    .col#{$i}-tb {
+      $value: getColumn($col, $i);
+      @include useColumn($value)
+    }
+  }
+  @include useBreakpoint("sp") {
+    .col#{$i}-sp {
+      $value: getColumn($col, $i);
+      @include useColumn($value)
+    }
+  }
 }

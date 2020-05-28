@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/layout.css">
+</head>
+<body>
+  <main id="app">
+    <div class="layout">
+      <div class="layout__tabs">
+        <div class="layout__tabs-container container">
+          <ul class="layout__tabs-list flex-row">
+            <li data-tab="fixed" class="layout__tabs-item col3 col6-tb col12-sp active">Fixed</li>
+            <li data-tab="fluid" class="layout__tabs-item col3 col6-tb col12-sp">Fluid</li>
+            <li data-tab="adaptive" class="layout__tabs-item col3 col6-tb col12-sp">Adaptive</li>
+            <li data-tab="responsive" class="layout__tabs-item col3 col6-tb col12-sp">Responsive</li>
+          </ul>
+        </div>
+      </div>
+      <div class="layout__content">
+        <!-- Fixed Layout -->
+        <section class="layout__item layout__item--fixed active" id="fixed">
+          <div class="container-fixed">
+            <h2 class="frame__title">Fixed</h2>
+            <div class="frame">
+              <div class="frame__head">
+                <nav class="frame__nav"></nav>
+                <span class="frame__toggle"></span>
+              </div>
+              <div class="frame__banner"></div>
+              <div class="frame__content">
+                <div class="flex-row">
+                  <div class="col4 item">
+                    <div class="item__image item__image--green"></div>
+                    <p class="item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facere totam, perferendis perspiciatis cum mollitia itaque repudiandae ut quas saepe, vitae quae recusandae numquam, earum deserunt? Dolores, rerum harum. Aperiam.</p>
+                  </div>
+                  <div class="col4 item">
+                    <div class="item__image item__image--blue"></div>
+                    <p class="item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facere totam, perferendis perspiciatis cum mollitia itaque repudiandae ut quas saepe, vitae quae recusandae numquam, earum deserunt? Dolores, rerum harum. Aperiam.</p>
+                  </div>
+                  <div class="col4 item">
+                    <div class="item__image item__image--purple"></div>
+                    <p class="item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facere totam, perferendis perspiciatis cum mollitia itaque repudiandae ut quas saepe, vitae quae recusandae numquam, earum deserunt? Dolores, rerum harum. Aperiam.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="frame__foot"></div>
+            </div>
+          </div>
+        </section>
+        <!-- ========================================================= -->
+
+        <!-- Fluid Layout -->
+        <section class="layout__item layout__item--fluid" id="fluid">
+          <div class="container-fluid">
+            <h2 class="frame__title">Fluid</h2>
+            <div class="frame">
+              <div class="frame__head">
+                <nav class="frame__nav"></nav>
+                <span class="frame__toggle"></span>
+              </div>
+              <div class="frame__banner"></div>
+              <div class="frame__content">
+                <div class="flex-row">
+                  <div class="col4 item">
+                    <div class="item__image item__image--green"></div>
+                    <p class="item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facere totam, perferendis perspiciatis cum mollitia itaque repudiandae ut quas saepe, vitae quae recusandae numquam, earum deserunt? Dolores, rerum harum. Aperiam.</p>
+                  </div>
+                  <div class="col4 item">
+                    <div class="item__image item__image--blue"></div>
+                    <p class="item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facere totam, perferendis perspiciatis cum mollitia itaque repudiandae ut quas saepe, vitae quae recusandae numquam, earum deserunt? Dolores, rerum harum. Aperiam.</p>
+                  </div>
+                  <div class="col4 item">
+                    <div class="item__image item__image--purple"></div>
+                    <p class="item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facere totam, perferendis perspiciatis cum mollitia itaque repudiandae ut quas saepe, vitae quae recusandae numquam, earum deserunt? Dolores, rerum harum. Aperiam.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="frame__foot"></div>
+            </div>
+          </div>
+        </section>
+        <!-- ========================================================= -->
+
+        <!-- Adaptive Layout -->
+        <section class="layout__item layout__item--adaptive" id="adaptive">
+          <!-- For PC -->
+          <div class="container-adaptive container-adaptive--for-pc">
+            <h2 class="frame__title">Adaptive</h2>
+            <div class="frame">
+              <div class="frame__head">
+                <nav class="frame__nav"></nav>
+                <span class="frame__toggle"></span>
+              </div>
+              <div class="frame__content">
+                <div class="frame__banner"></div>
+                <div class="container-adaptive">
+                  <div class="flex-row">
+                    <div class="col4 col6-tb col12-sp item">
+                      <div class="item__image item__image--green"></div>
+                      <p class="item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facere totam, perferendis perspiciatis cum mollitia itaque repudiandae ut quas saepe, vitae quae recusandae numquam, earum deserunt? Dolores, rerum harum. Aperiam.</p>
+                    </div>
+                    <div class="col4 col6-tb col12-sp item">
+                      <div class="item__image item__image--blue"></div>
+                      <p class="item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facere totam, perferendis perspiciatis cum mollitia itaque repudiandae ut quas saepe, vitae quae recusandae numquam, earum deserunt? Dolores, rerum harum. Aperiam.</p>
+                    </div>
+                    <div class="col4 col6-tb col12-sp item">
+                      <div class="item__image item__image--purple"></div>
+                      <p class="item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facere totam, perferendis perspiciatis cum mollitia itaque repudiandae ut quas saepe, vitae quae recusandae numquam, earum deserunt? Dolores, rerum harum. Aperiam.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="frame__foot"></div>
+            </div>
+          </div>
+          <!-- ========================================================= -->
+
+          <!-- For TB -->
+          <div class="container-adaptive container-adaptive--for-tb">
+            <h2 class="frame__title">Adaptive</h2>
+            <div class="frame">
+              <div class="frame__head">
+                <nav class="frame__nav"></nav>
+                <span class="frame__toggle"></span>
+              </div>
+              <div class="frame__content">
+                <div class="frame__banner"></div>
+                <div class="container-adaptive">
+                  <div class="item__list flex-row">
+                    <div class="col4 col12-sp item">
+                      <div class="item__image item__image--green"></div>
+                      <p class="item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facere totam, perferendis perspiciatis cum mollitia itaque repudiandae ut quas saepe, vitae quae recusandae numquam, earum deserunt? Dolores, rerum harum. Aperiam.</p>
+                    </div>
+                    <div class="col4 col12-sp item">
+                      <div class="item__image item__image--blue"></div>
+                      <p class="item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facere totam, perferendis perspiciatis cum mollitia itaque repudiandae ut quas saepe, vitae quae recusandae numquam, earum deserunt? Dolores, rerum harum. Aperiam.</p>
+                    </div>
+                    <div class="col4 col12-sp item">
+                      <div class="item__image item__image--purple"></div>
+                      <p class="item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facere totam, perferendis perspiciatis cum mollitia itaque repudiandae ut quas saepe, vitae quae recusandae numquam, earum deserunt? Dolores, rerum harum. Aperiam.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="frame__foot"></div>
+            </div>
+          </div>
+          <!-- ========================================================= -->
+
+          <!-- For SP -->
+          <div class="container-adaptive container-adaptive--for-sp">
+            <h2 class="frame__title">Adaptive</h2>
+            <div class="frame">
+              <div class="frame__head">
+                <nav class="frame__nav"></nav>
+                <span class="frame__toggle"></span>
+              </div>
+              <div class="frame__content">
+                <div class="frame__banner"></div>
+                <div class="container-adaptive">
+                  <div class="flex-row">
+                    <div class="col4 col6-tb col12-sp item">
+                      <div class="item__image item__image--green"></div>
+                      <p class="item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facere totam, perferendis perspiciatis cum mollitia itaque repudiandae ut quas saepe, vitae quae recusandae numquam, earum deserunt? Dolores, rerum harum. Aperiam.</p>
+                    </div>
+                    <div class="col4 col6-tb col12-sp item">
+                      <div class="item__image item__image--blue"></div>
+                      <p class="item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facere totam, perferendis perspiciatis cum mollitia itaque repudiandae ut quas saepe, vitae quae recusandae numquam, earum deserunt? Dolores, rerum harum. Aperiam.</p>
+                    </div>
+                    <div class="col4 col6-tb col12-sp item">
+                      <div class="item__image item__image--purple"></div>
+                      <p class="item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facere totam, perferendis perspiciatis cum mollitia itaque repudiandae ut quas saepe, vitae quae recusandae numquam, earum deserunt? Dolores, rerum harum. Aperiam.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="frame__foot"></div>
+            </div>
+          </div>
+          <!-- ========================================================= -->
+        </section>
+        <!-- ========================================================= -->
+
+        <!-- Responsive Layout -->
+        <section class="layout__item layout__item--responsive" id="responsive">
+          <div class="container-responsive">
+            <h2 class="frame__title">Responsive</h2>
+            <div class="frame">
+              <div class="frame__head">
+                <nav class="frame__nav"></nav>
+                <span class="frame__toggle"></span>
+              </div>
+                <div class="frame__banner"></div>
+              <div class="frame__content">
+                <div class="flex-row justify-content-center">
+                  <div class="col4 col8-tb col12-sp item">
+                    <div class="item__image item__image--green"></div>
+                    <p class="item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facere totam, perferendis perspiciatis cum mollitia itaque repudiandae ut quas saepe, vitae quae recusandae numquam, earum deserunt? Dolores, rerum harum. Aperiam.</p>
+                  </div>
+                  <div class="col4 col8-tb col12-sp item">
+                    <div class="item__image item__image--blue"></div>
+                    <p class="item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facere totam, perferendis perspiciatis cum mollitia itaque repudiandae ut quas saepe, vitae quae recusandae numquam, earum deserunt? Dolores, rerum harum. Aperiam.</p>
+                  </div>
+                  <div class="col4 col8-tb col12-sp item">
+                    <div class="item__image item__image--purple"></div>
+                    <p class="item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facere totam, perferendis perspiciatis cum mollitia itaque repudiandae ut quas saepe, vitae quae recusandae numquam, earum deserunt? Dolores, rerum harum. Aperiam.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="frame__foot"></div>
+            </div>
+          </div>
+        </section>
+        <!-- ========================================================= -->
+      </div>
+    </div>
+  </main>
+</body>
+<script src="./js/script.js"></script>
+</html>
