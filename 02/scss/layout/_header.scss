@@ -30,21 +30,22 @@
     .search {
       border-bottom: 1px solid $gray;
 
-      input {
+      %formStyle {
         border: none;
         outline: none;
-        color: $gray;
         background-color: transparent;
+        color: $gray;
+      }
+
+      input {
+        @extend %formStyle;
         font-size: 12px;
         padding: 3px 5px;
       }
 
       button {
-        border: none;
-        outline: none;
-        background-color: transparent;
+        @extend %formStyle;
         padding: 10px;
-        color: $gray;
       }
     }
   }

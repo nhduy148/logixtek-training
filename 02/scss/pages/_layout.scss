@@ -33,6 +33,36 @@
     &.active {
       display: block;
     }
+    &--adaptive {
+      .list {
+        justify-content: center;
+        @include useBreakpoint("tb") {
+          flex-wrap: wrap;
+        }
+        @include useBreakpoint("sp") {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      .item {
+        width: 600px;
+        padding: 0 10px;
+        @include useBreakpoint("tb") {
+          width: 350px;
+        
+          &:nth-child(3) {
+            width: 700px;
+          }
+        }
+        @include useBreakpoint("sp") {
+          width: 500px;
+        
+          &:nth-child(3) {
+            width: 500px;
+          }
+        }
+      }
+    }
     &--responsive {
       .item{
         @include useBreakpointInRange(768px, 1024px) {

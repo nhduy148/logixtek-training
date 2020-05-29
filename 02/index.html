@@ -18,7 +18,7 @@
     <header class="header">
       <div class="header__top">
         <div class="container">
-          <div class="flex-row flex-between-center">
+          <div class="flex-row justify-content-center align-items-center">
             <div class="col3">
               <div class="logo">
                 <h1>
@@ -28,15 +28,15 @@
                 </h1>
               </div>
             </div>
-            <div class="flex-center-right col9">
-              <ul class="contact__list flex-center-center">
-                <li class="contact__item flex-center-center">
+            <div class="flex justify-content-end align-items-center col9">
+              <ul class="contact__list flex-middle">
+                <li class="contact__item flex-middle">
                   <a href="#">
                     <span class="contact__icon"><i class="mdi mdi-phone"></i></span>
                     <span class="contact__text">+880 1710-000-000</span>
                   </a>
                 </li>
-                <li class="contact__item flex-center-center">
+                <li class="contact__item flex-middle">
                   <a href="#">
                     <span class="contact__icon"><i class="mdi mdi-email"></i></span>
                     <span class="contact__text">Email@Domain.com</span>
@@ -44,7 +44,7 @@
                 </li>
               </ul>
               <div class="social">
-                <ul class="social__list flex-center-center">
+                <ul class="social__list flex-middle">
                   <li class="social__item"><a href="#" class="social__icon"><i class="mdi mdi-facebook"></i></a></li>
                   <li class="social__item"><a href="#" class="social__icon"><i class="mdi mdi-twitter"></i></a></li>
                   <li class="social__item"><a href="#" class="social__icon"><i class="mdi mdi-linkedin"></i></a></li>
@@ -57,9 +57,9 @@
       </div>
       <div class="header__bottom">
         <div class="container">
-          <div class="flex-between-center">
+          <div class="flex justify-content-between align-items-center">
             <nav class="main-nav">
-              <ul class="main-nav__list flex-center-center">
+              <ul class="main-nav__list flex-middle">
                 <li class="main-nav__item active">
                   <a href="#">Home</a>
                 </li>
@@ -80,7 +80,7 @@
                 </li>
               </ul>
             </nav>
-            <form action="#" class="search flex-center-center">
+            <form action="#" class="search flex-middle">
               <input type="text" placeholder="Enter your search...">
               <button type="submit"><i class="mdi mdi-magnify"></i></button>
             </form>
@@ -89,15 +89,15 @@
       </div>
     </header>
     <main class="main" role="main">
-      <section class="main-visual">
+      <section class="slider">
         <span class="arrow-button prev-btn"><i class="mdi mdi-chevron-left"></i></span>
         <span class="arrow-button next-btn"><i class="mdi mdi-chevron-right"></i></span>
-        <div class="main-visual__list" id="visual">
-          <div class="main-visual__item">
-            <div class="main-visual__item-image">
+        <div class="slider__list" id="slider">
+          <div class="slider__item">
+            <div class="slider__item-image">
               <img src="./images/slide01.jpg" alt="">
             </div>
-            <div class="main-visual__item-content">
+            <div class="slider__item-content">
               <div class="container">
                 <h3>Life is <span class="yellow">about timing</span></h3>
                 <p>Just play. <span class="yellow">Have fun.</span> Enjoy the game</p>
@@ -107,11 +107,11 @@
               </div>
             </div>
           </div>
-          <div class="main-visual__item">
-            <div class="main-visual__item-image">
+          <div class="slider__item">
+            <div class="slider__item-image">
               <img src="./images/slide02.jpg" alt="">
             </div>
-            <div class="main-visual__item-content">
+            <div class="slider__item-content">
               <div class="container">
                 <h3>Life is <span class="yellow">about timing</span></h3>
                 <p>Just play. <span class="yellow">Have fun.</span> Enjoy the game</p>
@@ -121,11 +121,11 @@
               </div>
             </div>
           </div>
-          <div class="main-visual__item">
-            <div class="main-visual__item-image">
+          <div class="slider__item">
+            <div class="slider__item-image">
               <img src="./images/slide03.jpg" alt="">
             </div>
-            <div class="main-visual__item-content">
+            <div class="slider__item-content">
               <div class="container">
                 <h3>Life is <span class="yellow">about timing</span></h3>
                 <p>Just play. <span class="yellow">Have fun.</span> Enjoy the game</p>
@@ -147,20 +147,20 @@
             when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
           </p>
         </div>
-        <div class="about__visual">
+        <div class="about__slider">
           <span class="arrow-button prev-btn"><i class="mdi mdi-chevron-left"></i></span>
           <span class="arrow-button next-btn"><i class="mdi mdi-chevron-right"></i></span>
-          <div class="about__visual-list" id="about-visual">
-            <div class="about__visual-item">
-              <figure class="about__visual-image">
+          <div class="about__slider-list" id="about-slider">
+            <div class="about__slider-item">
+              <figure class="about__slider-image">
                 <img src="./images/photo_about_1.png" alt="">
-                <figcaption class="about__visual-name">Matin Huanez</figcaption>
+                <figcaption class="about__slider-name">Matin Huanez</figcaption>
               </figure>
             </div>
-            <div class="about__visual-item">
-              <figure class="about__visual-image">
+            <div class="about__slider-item">
+              <figure class="about__slider-image">
                 <img src="./images/photo_about_1.png" alt="">
-                <figcaption class="about__visual-name">Matin Huanez</figcaption>
+                <figcaption class="about__slider-name">Matin Huanez</figcaption>
               </figure>
             </div>
           </div>
@@ -179,7 +179,7 @@
               <p class="time-out text-center">45 <span class="time-out--unit">days</span> : 11 <span
                   class="time-out--unit">hrs</span> : 44 <span class="time-out--unit">min</span> : 01 <span
                   class="time-out--unit">sec</span></p>
-              <div class="match-schedule flex-bottom-center">
+              <div class="match-schedule flex justify-content-center align-items-end">
                 <div class="match-schedule__item">
                   <div class="match-schedule__logo">
                     <img src="./images/england.png" alt="">
@@ -303,7 +303,7 @@
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
             </p>
           </div>
-          <div class="forecast__content flex-center-center">
+          <div class="forecast__content flex-middle">
             <figure class="forecast__content-logo">
               <img src="./images/flag1.png" alt="">
             </figure>
@@ -354,7 +354,7 @@
               temporibus voluptatum esse iste doloribus corporis voluptas, omnis itaque. Voluptatum facilis asperiores
               commodi id quisquam eum ad necessitatibus?</p>
             <div class="social">
-              <ul class="social__list flex-center-left">
+              <ul class="social__list flex justify-content-start align-items-center">
                 <li class="social__item"><a href="#" class="social__icon"><i class="mdi mdi-facebook"></i></a></li>
                 <li class="social__item"><a href="#" class="social__icon"><i class="mdi mdi-twitter"></i></a></li>
                 <li class="social__item"><a href="#" class="social__icon"><i class="mdi mdi-linkedin"></i></a></li>
@@ -422,16 +422,16 @@
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
-  $("#visual").slick({
+  $("#slider").slick({
     autoplay: true,
     autoplaySpeed: 4000,
     speed: 1500,
-    nextArrow: $('.main-visual .next-btn'),
-    prevArrow: $('.main-visual .prev-btn')
+    nextArrow: $('.slider .next-btn'),
+    prevArrow: $('.slider .prev-btn')
   });
-  $("#about-visual").slick({
-    nextArrow: $('.about-visual .next-btn'),
-    prevArrow: $('.about-visual .prev-btn')
+  $("#about-slider").slick({
+    nextArrow: $('.about__slider .next-btn'),
+    prevArrow: $('.about__slider .prev-btn')
   });
 </script>
 <script src="./js/script.js"></script>

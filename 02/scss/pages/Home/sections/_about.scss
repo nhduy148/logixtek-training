@@ -1,5 +1,5 @@
 .about {
-  &__visual {
+  &__slider {
     position: relative;
     max-width: 300px;
     margin: 30px auto 40px;
@@ -32,9 +32,7 @@
     }
 
     .arrow-button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+      @include useAbsolute("v");
       padding: 20px 5px;
     }
   }

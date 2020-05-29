@@ -1,4 +1,4 @@
-.main-visual {
+.slider {
   position: relative;
   z-index: 1;
 
@@ -11,9 +11,7 @@
   }
 
   .arrow-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    @include useAbsolute("v");
     opacity: 0.7;
   }
 

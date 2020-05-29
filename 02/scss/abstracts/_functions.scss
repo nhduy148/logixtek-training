@@ -1,3 +1,3 @@
 @function getColumn($total, $col) {
-  @return 100 / ( $total / $col ) * 1%;
+  @return ( $col / $total ) * 100 * 1%;
 }

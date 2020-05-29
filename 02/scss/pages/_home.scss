@@ -1,6 +1,10 @@
-@import "Home/news";
-@import "Home/about";
-@import "Home/match";
-@import "Home/main-visual";
-@import "Home/forecast";
-@import "Home/contact";
+@import "Home/components/arrow-button",
+        "Home/components/social-list",
+        "Home/components/news-item";
+
+@import "Home/sections/slider",
+        "Home/sections/about",
+        "Home/sections/match",
+        "Home/sections/news",
+        "Home/sections/forecast",
+        "Home/sections/contact";

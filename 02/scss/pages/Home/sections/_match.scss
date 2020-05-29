@@ -24,12 +24,10 @@
 
         &::after {
           content: "";
+          @include useAbsolute("v");
+          right: 20px;
           width: 70%;
           height: 1px;
-          position: absolute;
-          top: 50%;
-          right: 20px;
-          transform: translateY(-50%);
           background: $yellow;
         }
       }
@@ -77,10 +75,10 @@
     }
 
     .time-expected {
+      @include useRem(16);
       color: $gray;
       line-height: 1.4;
       font-weight: bold;
-      @include useRem(16);
       margin-bottom: 20px;
     }
 
@@ -92,19 +90,6 @@
       }
 
       tr {
-        &:first-child {
-          th {
-            &:first-child {
-              text-align: left;
-            }
-
-            &:last-child {
-              width: 30%;
-              text-align: center;
-            }
-          }
-        }
-
         &:nth-child(even) {
           background: #494949;
         }
@@ -121,6 +106,14 @@
         @include useRem(18);
         color: $yellow;
         text-transform: uppercase;
+        &:first-child {
+          text-align: left;
+        }
+
+        &:last-child {
+          width: 30%;
+          text-align: center;
+        }
       }
 
       &__match {
