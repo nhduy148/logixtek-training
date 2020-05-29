@@ -3,19 +3,19 @@
   text-align: center;
   line-height: 1.4;
 
-  &--2 {
+  &--uppercase {
     @include useRem(18);
     text-transform: uppercase;
   }
 
-  &--3 {
+  &--white {
     color: $white;
   }
 
-  &--4 {
+  &--left {
     @include useRem(14);
     text-align: left;
-    color: #b1b1b1;
+    color: $gray;
     line-height: 1.4;
   }
 }

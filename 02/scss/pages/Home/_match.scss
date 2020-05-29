@@ -1,0 +1,142 @@
+.match {
+  background: $yellow;
+
+  &__head {
+    margin-bottom: 30px;
+  }
+
+  &__content {
+
+    .next-match,
+    .upcoming {
+      width: 50%;
+    }
+
+    .next-match {
+      background: $white;
+
+      &__title {
+        @include useRem(18);
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 20px;
+        position: relative;
+
+        &::after {
+          content: "";
+          width: 70%;
+          height: 1px;
+          position: absolute;
+          top: 50%;
+          right: 20px;
+          transform: translateY(-50%);
+          background: $yellow;
+        }
+      }
+    }
+
+    .time-out {
+      @include useRem(22);
+      padding: 20px;
+      background: #CCC;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      &--unit {
+        color: #666;
+      }
+    }
+
+    .match-schedule {
+      margin-top: 20px;
+      margin-bottom: 50px;
+
+      &__item {
+        margin: 0 15px 15px;
+      }
+
+      &__vs {
+        @include useRem(16);
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 10px;
+        color: $black;
+        background: $yellow;
+      }
+
+      &__logo {
+        text-align: center;
+      }
+
+      &__name {
+        @include useRem(18);
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $black;
+      }
+    }
+
+    .time-expected {
+      color: $gray;
+      line-height: 1.4;
+      font-weight: bold;
+      @include useRem(16);
+      margin-bottom: 20px;
+    }
+
+    .upcoming {
+      background: $black;
+
+      table {
+        width: 100%;
+      }
+
+      tr {
+        &:first-child {
+          th {
+            &:first-child {
+              text-align: left;
+            }
+
+            &:last-child {
+              width: 30%;
+              text-align: center;
+            }
+          }
+        }
+
+        &:nth-child(even) {
+          background: #494949;
+        }
+      }
+
+      th,
+      td {
+        @include useRem(14);
+        padding: 15px;
+        color: $gray
+      }
+
+      th {
+        @include useRem(18);
+        color: $yellow;
+        text-transform: uppercase;
+      }
+
+      &__match {
+        width: 60%;
+        text-transform: uppercase;
+
+        .yellow {
+          margin: 0 10px;
+        }
+      }
+
+      &__time {
+        width: 40%;
+        text-align: right;
+      }
+    }
+
+  }
+}

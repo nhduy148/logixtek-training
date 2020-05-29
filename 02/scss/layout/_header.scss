@@ -9,17 +9,17 @@
   }
 
   .contact {
-    &-item {
+    &__item {
       margin: 0 5px;
       color: #666;
     }
 
-    &-icon {
+    &__icon {
       font-size: 18px;
       margin-right: 5px;
     }
 
-    &-text {
+    &__text {
       font-size: 14px;
     }
   }

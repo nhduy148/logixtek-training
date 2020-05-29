@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
   <main id="app">
@@ -12,16 +12,16 @@
       <div class="layout__tabs">
         <div class="layout__tabs-container container">
           <ul class="layout__tabs-list flex-row">
-            <li data-tab="fixed" class="layout__tabs-item col3 col6-tb col12-sp active">Fixed</li>
-            <li data-tab="fluid" class="layout__tabs-item col3 col6-tb col12-sp">Fluid</li>
-            <li data-tab="adaptive" class="layout__tabs-item col3 col6-tb col12-sp">Adaptive</li>
-            <li data-tab="responsive" class="layout__tabs-item col3 col6-tb col12-sp">Responsive</li>
+            <li data-tab="fixed" class="layout__tabs-item js-tabs-item col3 col6-tb col12-sp active">Fixed</li>
+            <li data-tab="fluid" class="layout__tabs-item js-tabs-item col3 col6-tb col12-sp">Fluid</li>
+            <li data-tab="adaptive" class="layout__tabs-item js-tabs-item col3 col6-tb col12-sp">Adaptive</li>
+            <li data-tab="responsive" class="layout__tabs-item js-tabs-item col3 col6-tb col12-sp">Responsive</li>
           </ul>
         </div>
       </div>
       <div class="layout__content">
         <!-- Fixed Layout -->
-        <section class="layout__item layout__item--fixed active" id="fixed">
+        <section class="layout__item js-layout-item layout__item--fixed active" id="fixed">
           <div class="container-fixed">
             <h2 class="frame__title">Fixed</h2>
             <div class="frame">
@@ -53,7 +53,7 @@
         <!-- ========================================================= -->
 
         <!-- Fluid Layout -->
-        <section class="layout__item layout__item--fluid" id="fluid">
+        <section class="layout__item js-layout-item layout__item--fluid" id="fluid">
           <div class="container-fluid">
             <h2 class="frame__title">Fluid</h2>
             <div class="frame">
@@ -85,7 +85,7 @@
         <!-- ========================================================= -->
 
         <!-- Adaptive Layout -->
-        <section class="layout__item layout__item--adaptive" id="adaptive">
+        <section class="layout__item js-layout-item layout__item--adaptive" id="adaptive">
           <!-- For PC -->
           <div class="container-adaptive container-adaptive--for-pc">
             <h2 class="frame__title">Adaptive</h2>
@@ -185,7 +185,7 @@
         <!-- ========================================================= -->
 
         <!-- Responsive Layout -->
-        <section class="layout__item layout__item--responsive" id="responsive">
+        <section class="layout__item js-layout-item layout__item--responsive" id="responsive">
           <div class="container-responsive">
             <h2 class="frame__title">Responsive</h2>
             <div class="frame">

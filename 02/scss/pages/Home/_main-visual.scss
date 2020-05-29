@@ -25,7 +25,7 @@
       position: absolute;
       bottom: 30px;
       right: 50px;
-      color: #FFF;
+      color: $white;
 
       h3 {
         @include useRem(36);

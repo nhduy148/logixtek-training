@@ -1,30 +1,26 @@
 .about {
-  padding: 40px 0;
-
   &__visual {
     position: relative;
     max-width: 300px;
     margin: 30px auto 40px;
+    
+    &-list {
+      width: calc(300px - (28px * 2));
+      margin: 0 auto;
+    }
 
-    .visual {
-      &__list {
-        width: calc(300px - (28px * 2));
+    &-image {
+      img {
         margin: 0 auto;
       }
-  
-      &__image {
-        img {
-          margin: 0 auto;
-        }
-      }
-  
-      &__name {
-        @include useRem(16);
-        font-weight: bold;
-        text-align: center;
-        margin-top: 10px;
-        text-transform: uppercase;
-      }
+    }
+
+    &-name {
+      @include useRem(16);
+      font-weight: bold;
+      text-align: center;
+      margin-top: 10px;
+      text-transform: uppercase;
     }
 
     .prev-btn {
@@ -40,154 +36,6 @@
       top: 50%;
       transform: translateY(-50%);
       padding: 20px 5px;
-    }
-  }
-
-  &__match {
-    padding: 40px 30px;
-    background: $yellow;
-    .match {
-      &__head {
-        margin-bottom: 30px;
-      }
-  
-      &__content {
-  
-        .next-match,
-        .upcoming {
-          width: 50%;
-        }
-  
-        .next-match {
-          background: $white;
-  
-          &__title {
-            @include useRem(18);
-            font-weight: bold;
-            text-transform: uppercase;
-            padding: 20px;
-            position: relative;
-  
-            &::after {
-              content: "";
-              width: 70%;
-              height: 1px;
-              position: absolute;
-              top: 50%;
-              right: 20px;
-              transform: translateY(-50%);
-              background: $yellow;
-            }
-          }
-        }
-  
-        .upcoming {
-          background: $black;
-        }
-      }
-    }
-
-    .time-out {
-      @include useRem(22);
-      padding: 20px;
-      background: #CCC;
-      text-align: center;
-      font-weight: bold;
-      text-transform: uppercase;
-
-      &--unit {
-        color: #666;
-      }
-    }
-
-    .match-schedule {
-      margin-top: 20px;
-      margin-bottom: 30px;
-
-      &__item {
-        margin: 0 15px 15px;
-      }
-
-      &__vs {
-        @include useRem(16);
-        font-weight: bold;
-        text-transform: uppercase;
-        padding: 10px;
-        color: $black;
-        background: $yellow;
-      }
-
-      &__logo {
-        text-align: center;
-      }
-
-      &__name {
-        @include useRem(18);
-        font-weight: bold;
-        text-transform: uppercase;
-        color: $black;
-      }
-    }
-
-    .time-expected {
-      color: $gray;
-      text-align: center;
-      line-height: 1.4;
-      font-weight: bold;
-      @include useRem(16);
-      margin-bottom: 20px;
-    }
-
-    .upcoming {
-      table {
-        width: 100%;
-      }
-
-      tr {
-        &:first-child {
-          th {
-            &:first-child {
-              text-align: left;
-            }
-
-            &:last-child {
-              width: 30%;
-              text-align: center;
-            }
-          }
-        }
-
-        &:nth-child(even) {
-          background: #494949;
-        }
-      }
-
-      th,
-      td {
-        @include useRem(14);
-        padding: 15px;
-        color: $gray
-      }
-
-      th {
-        @include useRem(18);
-        color: $yellow;
-        text-transform: uppercase;
-      }
-
-      .match {
-        width: 60%;
-        text-transform: uppercase;
-
-        .yellow {
-          margin: 0 10px;
-        }
-      }
-
-      .time {
-        width: 40%;
-        text-align: right;
-      }
     }
   }
 }

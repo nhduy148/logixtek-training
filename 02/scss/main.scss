@@ -4,11 +4,13 @@
         "abstracts/variable";
 // Base
 @import "base/reset",
-        "base/general";
+        "base/typography",
+        "base/helpers";
 // Layout
 @import "layout/grid",
         "layout/navigation",
         "layout/header",
+        "layout/block",
         "layout/footer";
 // components
 @import "components/title",
@@ -18,4 +20,5 @@
         "components/social-list",
         "components/news-item";
 // SCSS pages
-@import "pages/index";
+@import "pages/home",
+        "pages/layout";

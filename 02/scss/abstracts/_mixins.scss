@@ -1,11 +1,10 @@
 @mixin useRem($fz) {
-	font-size: #{$fz/13}rem;
+	font-size: ( $fz / 13 ) * 1rem;
 }
 
 @mixin useColumn($value) {
-	$unit: unquote("%");
-  flex: 0 0 #{$value}$unit;
-  max-width: #{$value}$unit;
+  flex: 0 0 #{$value};
+  max-width: $value;
 }
 
 @mixin useBreakpoint($breakpoint) {

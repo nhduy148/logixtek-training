@@ -19,19 +19,19 @@
     background: $yellow;
   }
 
-  &--2 {
+  &--border-black {
     &::before {
       background: $black;
     }
   }
 
-  &--3 {
+  &--white {
     color: $white;
   }
 
-  &--4 {
+  &--left {
     @include useRem(18);
-    color: #b1b1b1;
+    color: $gray;
     text-align: left;
 
     &::before {

@@ -81,28 +81,28 @@
   align-items: flex-end;
 }
 
-.flex-center-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .flex-bottom-right {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
 
-.flex-center-left {
+.flex-center-center {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+}
+
+.flex-center-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .flex-center-right {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .flex-between-center {

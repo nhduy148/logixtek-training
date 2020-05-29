@@ -1,9 +1,9 @@
 window.addEventListener("DOMContentLoaded", function() {
 
-  const tabs = [...document.querySelectorAll('.layout__tabs-item')];
+  const tabs = [...document.querySelectorAll('.js-tabs-item')];
   [].forEach.call(tabs, function(el) {
     el.onclick = e => {
-      const items = document.querySelectorAll(".layout__item")
+      const items = [...document.querySelectorAll(".js-layout-item")]
       const tabName = e.target.getAttribute("data-tab");
       const thisItem = document.getElementById(tabName);
       

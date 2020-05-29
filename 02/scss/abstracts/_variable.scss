@@ -4,11 +4,7 @@ $black: #212121;
 $white: #FFF;
 $col: 12;
 $breakpoints: (
-  sp: 768px,
-  tb: 1024px,
-  pc: 1024px
+  'sp': 768px,
+  'tb': 1024px,
+  'pc': 1024px
 );
-
-.yellow {
-  color: $yellow;
-}

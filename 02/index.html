@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Logixtek">
   <title>Document</title>
-  <link rel="stylesheet" href="./iconfont/MaterialDesign-Webfont-master/css/materialdesignicons.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="./fonts/MaterialDesignIcon/scss/materialdesignicons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
 
 </head>
@@ -27,18 +28,18 @@
                 </h1>
               </div>
             </div>
-            <div class="flex align-items-center justify-content-end col9">
-              <ul class="contact-list flex-center-center">
-                <li class="contact-item flex-center-center">
+            <div class="flex-center-right col9">
+              <ul class="contact__list flex-center-center">
+                <li class="contact__item flex-center-center">
                   <a href="#">
-                    <span class="contact-icon"><i class="mdi mdi-phone"></i></span>
-                    <span class="contact-text">+880 1710-000-000</span>
+                    <span class="contact__icon"><i class="mdi mdi-phone"></i></span>
+                    <span class="contact__text">+880 1710-000-000</span>
                   </a>
                 </li>
-                <li class="contact-item flex-center-center">
+                <li class="contact__item flex-center-center">
                   <a href="#">
-                    <span class="contact-icon"><i class="mdi mdi-email"></i></span>
-                    <span class="contact-text">Email@Domain.com</span>
+                    <span class="contact__icon"><i class="mdi mdi-email"></i></span>
+                    <span class="contact__text">Email@Domain.com</span>
                   </a>
                 </li>
               </ul>
@@ -56,10 +57,10 @@
       </div>
       <div class="header__bottom">
         <div class="container">
-          <div class="flex flex-between-center">
+          <div class="flex-between-center">
             <nav class="main-nav">
               <ul class="main-nav__list flex-center-center">
-                <li class="main-nav__item">
+                <li class="main-nav__item active">
                   <a href="#">Home</a>
                 </li>
                 <li class="main-nav__item">
@@ -137,7 +138,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="block about">
         <div class="about__head">
           <h3 class="title">about team</h3>
           <p class="description">
@@ -149,94 +150,95 @@
         <div class="about__visual">
           <span class="arrow-button prev-btn"><i class="mdi mdi-chevron-left"></i></span>
           <span class="arrow-button next-btn"><i class="mdi mdi-chevron-right"></i></span>
-          <div class="visual__list" id="about-visual">
-            <div class="visual__item">
-              <figure class="visual__image">
+          <div class="about__visual-list" id="about-visual">
+            <div class="about__visual-item">
+              <figure class="about__visual-image">
                 <img src="./images/photo_about_1.png" alt="">
-                <figcaption class="visual__name">Matin Huanez</figcaption>
+                <figcaption class="about__visual-name">Matin Huanez</figcaption>
               </figure>
             </div>
-            <div class="visual__item">
-              <figure class="visual__image">
+            <div class="about__visual-item">
+              <figure class="about__visual-image">
                 <img src="./images/photo_about_1.png" alt="">
-                <figcaption class="visual__name">Matin Huanez</figcaption>
+                <figcaption class="about__visual-name">Matin Huanez</figcaption>
               </figure>
-            </div>
-          </div>
-        </div>
-        <div class="about__match">
-          <div class="container">
-            <div class="match__head">
-              <h4 class="title title--2">next match stats in table</h4>
-              <p class="description description--2">its next match stats in table view</p>
-            </div>
-            <div class="match__content flex">
-              <div class="next-match">
-                <h4 class="next-match__title">next <span class="yellow">match</span></h4>
-                <p class="time-out">45 <span class="time-out--unit">days</span> : 11 <span
-                    class="time-out--unit">hrs</span> : 44 <span class="time-out--unit">min</span> : 01 <span
-                    class="time-out--unit">sec</span></p>
-                <div class="match-schedule flex-bottom-center">
-                  <div class="match-schedule__item">
-                    <div class="match-schedule__logo">
-                      <img src="./images/england.png" alt="">
-                    </div>
-                    <p class="match-schedule__name">england</p>
-                  </div>
-                  <div class="match-schedule__vs">vs</div>
-                  <div class="match-schedule__item">
-                    <div class="match-schedule__logo">
-                      <img src="./images/amsterdam.png" alt="">
-                    </div>
-                    <p class="match-schedule__name">amsterdam</p>
-                  </div>
-                </div>
-                <div class="time-expected">
-                  November 14, 2015 | 12:00 am <br>Cambridgeshire UK
-                </div>
-              </div>
-              <div class="upcoming">
-                <table>
-                  <tr>
-                    <th>upcoming match</th>
-                    <th>date</th>
-                  </tr>
-                  <tr>
-                    <td class="match">england <span class="yellow">vs</span> amsterdam</td>
-                    <td class="time">2017, Thu, Mar 12:00 AM</td>
-                  </tr>
-                  <tr>
-                    <td class="match">england <span class="yellow">vs</span> amsterdam</td>
-                    <td class="time">2017, Thu, Mar 12:00 AM</td>
-                  </tr>
-                  <tr>
-                    <td class="match">england <span class="yellow">vs</span> amsterdam</td>
-                    <td class="time">2017, Thu, Mar 12:00 AM</td>
-                  </tr>
-                  <tr>
-                    <td class="match">england <span class="yellow">vs</span> amsterdam</td>
-                    <td class="time">2017, Thu, Mar 12:00 AM</td>
-                  </tr>
-                  <tr>
-                    <td class="match">england <span class="yellow">vs</span> amsterdam</td>
-                    <td class="time">2017, Thu, Mar 12:00 AM</td>
-                  </tr>
-                  <tr>
-                    <td class="match">england <span class="yellow">vs</span> amsterdam</td>
-                    <td class="time">2017, Thu, Mar 12:00 AM</td>
-                  </tr>
-                  <tr>
-                    <td class="match">england <span class="yellow">vs</span> amsterdam</td>
-                    <td class="time">2017, Thu, Mar 12:00 AM</td>
-                  </tr>
-                </table>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="news">
+      <section class="block match">
+        <div class="container">
+          <div class="match__head">
+            <h4 class="title title--border-black">next match stats in table</h4>
+            <p class="description description--uppercase">its next match stats in table view</p>
+          </div>
+          <div class="match__content flex">
+            <div class="next-match">
+              <h4 class="next-match__title">next <span class="yellow">match</span></h4>
+              <p class="time-out text-center">45 <span class="time-out--unit">days</span> : 11 <span
+                  class="time-out--unit">hrs</span> : 44 <span class="time-out--unit">min</span> : 01 <span
+                  class="time-out--unit">sec</span></p>
+              <div class="match-schedule flex-bottom-center">
+                <div class="match-schedule__item">
+                  <div class="match-schedule__logo">
+                    <img src="./images/england.png" alt="">
+                  </div>
+                  <p class="match-schedule__name">england</p>
+                </div>
+                <div class="match-schedule__vs">vs</div>
+                <div class="match-schedule__item">
+                  <div class="match-schedule__logo">
+                    <img src="./images/amsterdam.png" alt="">
+                  </div>
+                  <p class="match-schedule__name">amsterdam</p>
+                </div>
+              </div>
+              <div class="time-expected text-center">
+                November 14, 2015 | 12:00 am <br>Cambridgeshire UK
+              </div>
+            </div>
+            <div class="upcoming">
+              <table>
+                <tr>
+                  <th>upcoming match</th>
+                  <th>date</th>
+                </tr>
+                <tr>
+                  <td class="upcoming__match">england <span class="yellow">vs</span> amsterdam</td>
+                  <td class="upcoming__time">2017, Thu, Mar 12:00 AM</td>
+                </tr>
+                <tr>
+                  <td class="upcoming__match">england <span class="yellow">vs</span> amsterdam</td>
+                  <td class="upcoming__time">2017, Thu, Mar 12:00 AM</td>
+                </tr>
+                <tr>
+                  <td class="upcoming__match">england <span class="yellow">vs</span> amsterdam</td>
+                  <td class="upcoming__time">2017, Thu, Mar 12:00 AM</td>
+                </tr>
+                <tr>
+                  <td class="upcoming__match">england <span class="yellow">vs</span> amsterdam</td>
+                  <td class="upcoming__time">2017, Thu, Mar 12:00 AM</td>
+                </tr>
+                <tr>
+                  <td class="upcoming__match">england <span class="yellow">vs</span> amsterdam</td>
+                  <td class="upcoming__time">2017, Thu, Mar 12:00 AM</td>
+                </tr>
+                <tr>
+                  <td class="upcoming__match">england <span class="yellow">vs</span> amsterdam</td>
+                  <td class="upcoming__time">2017, Thu, Mar 12:00 AM</td>
+                </tr>
+                <tr>
+                  <td class="upcoming__match">england <span class="yellow">vs</span> amsterdam</td>
+                  <td class="upcoming__time">2017, Thu, Mar 12:00 AM</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block news">
         <div class="container">
           <div class="news__head">
             <h3 class="title">news</h3>
@@ -292,11 +294,11 @@
         </div>
       </section>
 
-      <section class="forecast">
+      <section class="block forecast">
         <div class="container">
           <div class="forecast__head">
-            <h3 class="title title--3">forecast</h3>
-            <p class="description description--3">
+            <h3 class="title title--white">forecast</h3>
+            <p class="description description--white">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
             </p>
@@ -316,7 +318,7 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section class="block contact">
         <div class="contact__head">
           <h3 class="title">contactus</h3>
           <p class="description">
@@ -343,16 +345,16 @@
         </div>
       </section>
     </main>
-    <footer class="footer footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer__top flex-row">
           <div class="col4">
-            <h3 class="title title--4">About Us</h3>
-            <p class="description description--4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sunt odio placeat
+            <h3 class="title title--left">About Us</h3>
+            <p class="description description--left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sunt odio placeat
               temporibus voluptatum esse iste doloribus corporis voluptas, omnis itaque. Voluptatum facilis asperiores
               commodi id quisquam eum ad necessitatibus?</p>
             <div class="social">
-              <ul class="social__list flex-center-center">
+              <ul class="social__list flex-center-left">
                 <li class="social__item"><a href="#" class="social__icon"><i class="mdi mdi-facebook"></i></a></li>
                 <li class="social__item"><a href="#" class="social__icon"><i class="mdi mdi-twitter"></i></a></li>
                 <li class="social__item"><a href="#" class="social__icon"><i class="mdi mdi-linkedin"></i></a></li>
@@ -361,8 +363,8 @@
             </div>
           </div>
           <div class="col4">
-            <h3 class="title title--4">Galley</h3>
-            <p class="description description--4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sunt odio placeat
+            <h3 class="title title--left">Galley</h3>
+            <p class="description description--left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sunt odio placeat
               temporibus</p>
             <div class="gallery">
               <figure class="gallery__item">
@@ -400,8 +402,8 @@
             </div>
           </div>
           <div class="col4">
-            <h3 class="title title--4">Newsletter</h3>
-            <p class="description description--4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sunt odio placeat
+            <h3 class="title title--left">Newsletter</h3>
+            <p class="description description--left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sunt odio placeat
               temporibus voluptatum esse iste doloribus corporis voluptas, omnis itaque. Voluptatum facilis asperiores
               commodi id quisquam eum ad necessitatibus?</p>
             <form action="#" class="footer__form">
@@ -412,7 +414,7 @@
             </form>
           </div>
         </div>
-        <div class="copyright">Copyright 2014 Sky Sport. All Rights Reserved.</div>
+        <div class="copyright text-right">Copyright 2014 Sky Sport. All Rights Reserved.</div>
       </div>
     </footer>
   </div>
@@ -421,6 +423,9 @@
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
   $("#visual").slick({
+    autoplay: true,
+    autoplaySpeed: 4000,
+    speed: 1500,
     nextArrow: $('.main-visual .next-btn'),
     prevArrow: $('.main-visual .prev-btn')
   });
